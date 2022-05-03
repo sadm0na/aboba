@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+.hero {
+    width: 91%;
+    margin: auto;
+}
+ /* navbar */
+.navbar{
+    margin: 8px 0 0 50px;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    padding-bottom: 20px;
+}
+
+
+ul{
+    flex: 1;
+    text-align: right;
+    color: white;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 25px 25px 20px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 450;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #ffffff9d;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -38px;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+
+
+/* main */
+.wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 3px 0 3px;
+}
+#zen{
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(255, 255, 255, 0.804);
+}
+
+
+/* input-output */
+
+textarea{
+    width: 100%;
+    background-color: rgba(5, 18, 93, 0.078);
+    color: white;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.out{
+    margin: 50px 0 0 50px;
+}
+
+.card{
+    margin-top: 30px;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgba(161, 158, 158, 0.416);
+    border-radius: 12px;
+    /* border: none; */
+    /* margin-bottom: 20px; */
+    color: white;
+}
+
+/* button */
+button{
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    position: relative;
+    border: none;
+    margin: 25px 0 0 0;
+    outline: none;
+}
+
+.btn1{
+    color: white;
+    background-color: rgba(205, 11, 11, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn1::after, .btn1::before{
+    border: 3px solid white;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.4s ease;
+}
+
+.btn1:hover::after{
+    transform: translate(-5px, -5px)
+}
+
+.btn1:hover::before{
+    transform: translate(5px, 5px)
+}
+
+#del {
+    margin-left: 52px;
+    padding: 5px 40px;
+    outline: none;
+    border: 2px solid #ffffffc8;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ffffff00;
+    color: #ffffff;
+    display: none;
+}

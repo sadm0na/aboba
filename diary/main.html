@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Diary</title>
+</head>
+<body style="background-image: url('theme/img/cat.png');">
+    <div class="hero">
+        <div class="navbar">
+            <a href="#">
+                <h1 style="color:white;">
+                    Create your day
+                </h1>
+            </a>
+            <ul>
+                <li><a href="theme/theme.html">Theme</a></li>
+                <li><a href="article/article.html">Article</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    
+        <div class="wrapper">
+            <h2 id="zen">Life does not get better by chance, it gets better by change.<br> @Jim Rohn</h2>
+
+            <textarea class ="ta" id="txt" rows="4" placeholder="Your goal"></textarea>
+            <button class="btn1" onclick="getRs();">Click on me</button>
+        </div>
+
+        <div class="out" id="rs"></div>
+        <button id="del">Done</button>
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>

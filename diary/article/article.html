@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="article.css">
+</head>
+<body style="background-image: url('../theme/img/cat.png');">
+    <div class="hero">
+        <div class="navbar">
+            <a href="../main.html">
+                <h1 style="color:white;">
+                    Create your day
+                </h1>
+            </a>
+            <ul>
+                <li><a href="../theme/theme.html">Theme</a></li>
+                <li><a href="#">Article</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- articles -->
+        <div class="articles">
+            <div class="left">
+                <a id="games" href="#" onclick="rand_game()" target="_blank"><img src="img/games.png" width="440" height="250"></a>
+            </div>
+
+            <div class="middle">
+                <a  id="cinema" href="#" onclick="rand_film()" target="_blank"><img src="img/cinema.png" width="440" height="250"></a>
+            </div>
+
+            <div class="right">
+                <a id="science" href="#" onclick="rand_science()" target="_blank"><img src="img/science.png" width="440" height="250"></a>
+            </div>
+        </div>
+        <script src="../main.js"></script>
+    </div>
+</body>
+</html>
